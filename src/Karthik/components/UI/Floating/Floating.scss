@@ -1,0 +1,77 @@
+// .shape1 {
+// 	position: absolute;
+// 	bottom: 100px;
+// 	right: 100px;
+// 	width: 20px;
+// 	height: 20px;
+// 	border: 3px solid #0cb1c4;
+// 	// animation: spin 3s ease infinite linear;
+// 	animation-name: spin;
+// 	animation-duration: 20000ms;
+// 	animation-iteration-count: infinite;
+// 	animation-timing-function: linear;
+// }
+
+// @keyframes spin {
+// 	from {
+// 		transform: translate(0) rotate(0deg);
+// 	}
+// 	to {
+// 		transform: translate(-20vw,-60vh) rotate(360deg);
+// 	}
+// }
+#motion-demo {
+	offset-path: path("M18.45,58.46s52.87-70.07,191.25-.75,101.75-6.23,101.75-6.23S246.38,5.59,165.33,9.08s-15,71.57-94.51,74.56S18.45,58.46,18.45,58.46Z");
+	animation: move 30000ms infinite alternate ease-in-out;
+	width: 20px;
+	height: 20px;
+	border: 3px solid cyan;
+	position: absolute;
+	top: 100px;
+	right: 500px;
+}
+#motion-demo1 {
+	offset-path: path("M58.45,58.36s52.27-70.07,11.25-.65,101.75-6.93,101.75-6.23S246.38,5.59,15.33,9.08s-15,71.57-94.51,74.56S18.45,58.46,18.45,58.46Z");
+	animation: move 30000ms infinite alternate ease-in-out;
+	width: 20px;
+	height: 20px;
+	border: 3px solid rgb(255, 0, 255);
+	position: absolute;
+	border-radius: 100px;
+	top: 300px;
+	left: 200px;
+}
+
+#motion-demo2 {
+	offset-path: path("M108.45,8.46s52.7-70.07,11.25-.75,11.75-6.23,11.75-6.23S246.38,5.59,365.33,9.08s-15,1.7-4.51,74.56S18.45,5.46,18.4,58.46Z");
+	animation: move 30000ms infinite alternate ease-in-out;
+	width: 20px;
+	height: 20px;
+	border: 3px solid rgb(217, 255, 0);
+	position: absolute;
+	bottom: 100px;
+	right: 500px;
+}
+
+
+
+@keyframes move {
+	0% {
+		offset-distance: 0%;
+	}
+	100% {
+		offset-distance: 100%;
+	}
+}
+
+@media screen and (max-width: 507px) {
+	#motion-demo1 {
+		display: none;
+	}
+	#motion-demo {
+		display: none;
+	}
+	#motion-demo2 {
+		display: none;
+	}
+}

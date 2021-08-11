@@ -1,0 +1,193 @@
+.ProjectsContainer {
+    width: 100%;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: "Julius Sans One", sans-serif;
+}
+.ProjectContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.Project,
+.Project1,
+.Project2,
+.Project3,
+.Project4,
+.Project5,
+.Project6,
+.Project7 {
+    width: 350px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    margin: 20px auto;
+}
+.Project h2,
+.Project1 h2,
+.Project2 h2,
+.Project3 h2,
+.Project4 h2,
+.Project5 h2,
+.Project6 h2,
+.Project7 h2 {
+    font-family: "Julius Sans One", sans-serif;
+    font-weight: bolder;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: 5s ease;
+    margin: 20px 0 0 0;
+}
+.Project p,
+.Project1 p,
+.Project2 p,
+.Project3 p,
+.Project4 p,
+.Project5 p,
+.Project6 p,
+.Project7 p {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+    margin-top: 0;
+    width: 80%;
+}
+.Project div,
+.Project1 div,
+.Project2 div,
+.Project3 div,
+.Project4 div,
+.Project5 div,
+.Project6 div,
+.Project7 div {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 0.7rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-family: Calibri, sans-serif;
+}
+.Project a div,
+.Project1 a div,
+.Project2 a div,
+.Project3 a div,
+.Project4 a div,
+.Project5 a div,
+.Project6 a div,
+.Project7 a div {
+    width: 20px;
+    height: 20px;
+    padding: 10px;
+    font-size: 0.7rem;
+    position: absolute;
+    top: 0;
+    right: 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.Project a div:hover,
+.Project1 a div:hover,
+.Project2 a div:hover,
+.Project3 a div:hover,
+.Project4 a div:hover,
+.Project5 a div:hover,
+.Project6 a div:hover,
+.Project7 a div:hover {
+    font-size: 1.5rem;
+}
+.Project:hover p,
+.Project1:hover p,
+.Project2:hover p,
+.Project3:hover p,
+.Project4:hover p,
+.Project5:hover p,
+.Project6:hover p,
+.Project7:hover p {
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: 400;
+    font-size: 1.1rem;
+    visibility: visible;
+    opacity: 1;
+    margin-top: 20px;
+}
+.Project:hover h2,
+.Project1:hover h2,
+.Project2:hover h2,
+.Project3:hover h2,
+.Project4:hover h2,
+.Project5:hover h2,
+.Project6:hover h2,
+.Project7:hover h2 {
+    text-decoration: underline;
+}
+
+.Project {
+    background: linear-gradient(180deg, #b1e5f9, #f4d2fe);
+}
+.Project1 {
+    background: linear-gradient(180deg, #efa971, #b1e5f9);
+}
+.Project2 {
+    background: linear-gradient(180deg, #dbb4f3, #f4d2fe);
+}
+.Project3 {
+    background: linear-gradient(180deg, #efa971, #e4cafe);
+}
+.Project4 {
+    background: linear-gradient(180deg, #b1e5f9, #f4d2fe);
+}
+.Project5 {
+    background: linear-gradient(180deg, #b1e5f9, #efa971);
+}
+.Project6 {
+    background: linear-gradient(180deg, #b1e5f9, #efa971);
+}
+.Project7 {
+    background: linear-gradient(180deg, #b1e5f9, #71ef82);
+}
+.Project8{
+    width: 350px;
+}
+
+@media screen and (max-width: 507px) {
+    .ProjectsContainer {
+        padding: 20px;
+    }
+    .Project,
+    .Project1,
+    .Project2,
+    .Project3,
+    .Project4,
+    .Project5,
+    .Project6,
+    .Project7 {
+        width: 100%;
+        height: 250px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: black;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        margin: 20px auto;
+    }
+}

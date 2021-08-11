@@ -1,0 +1,78 @@
+.profilePicture {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    top: 30px;
+    left: 30px;
+    z-index: 1000;
+}
+
+.profilePicture::before {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    top: -5px;
+    left: -5px;
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: 50%;
+    // padding: 10px;
+    border: 2px solid #4a2828;
+}
+
+.profilePicture img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.DrawerToggle {
+    width: 50px;
+    height: 40px;
+    display: flex;
+    z-index: 1000;
+    flex-flow: column;
+    justify-content: space-around;
+    margin-left: auto;
+    padding: 10px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    position: fixed;
+    top: 30px;
+    right: 30px;
+    background-color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.DrawerToggle div {
+    cursor: pointer;
+    width: 80%;
+    height: 3px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: transform .5s ease;
+}
+.DrawerToggle div:nth-of-type(2) {
+    width: 100%;
+    height: 3px;
+    background-color: #ffffff;
+    border-radius: 100px;
+    transition: transform .5s ease;
+}
+.DrawerToggle.Open div:nth-of-type(2) {
+    transform: translateX(1000%);
+    transition: transform .5s ease;
+}
+.DrawerToggle.Open div:first-of-type {
+    width: 80%;
+    transition: transform .5s ease;
+    transform: translate(0px, 10px) rotate(45deg);
+}
+.DrawerToggle.Open div:last-of-type {
+    width: 80%;
+    transition: transform .5s ease;
+    transform: translate(0px, -10px) rotate(135deg);
+}

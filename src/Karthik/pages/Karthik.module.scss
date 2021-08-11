@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Cookie&family=Julius+Sans+One&display=swap");
+.container {
+    width: 100%;
+    height: auto;
+    background-color: #000000;
+    color: #c3e5f2;
+}
+.banner {
+    width: 100%;
+    min-height: 100vh;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.greeting {
+    position: absolute;
+    bottom: 20px;
+    left: 0px;
+    font-size: 10rem;
+    color: #c3e5f21e;
+    font-weight: bolder;
+    font-family: fantasy;
+}
+.bannerTitle {
+    width: 100%;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-right: 100px;
+    box-sizing: border-box;
+    font-size: 3rem;
+    text-align: left;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.bannerTitle div {
+    width: 30px;
+    height: 7px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    margin: 15px 0px 15px 5px;
+}
+.bannerTitle p:first-of-type {
+    font-size: 1rem;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    font-family: "Julius Sans One", sans-serif;
+    z-index: 10;
+}
+.bannerTitle p:nth-of-type(2) {
+    font-size: 5rem;
+    animation: flow 5s ease-in-out infinite;
+    background: linear-gradient(-60deg, #904e95, #e73c7e, #35ff56, #52e4ee);
+    background-size: 300%;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    font-weight: bolder;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 10;
+}
+.bannerTitle p:nth-of-type(3) {
+    font-size: 2rem;
+    margin-left: 5px;
+    z-index: 10;
+    // font-weight: bolder;
+}
+.bannerTitle p:last-of-type {
+    font-size: 1.5rem;
+    margin-top: 20px;
+    margin-left: 5px;
+    color: #c3e5f294;
+    z-index: 10;
+}
+.bannerTitle button {
+    background-color: #06a438;
+    border: 1px solid #06a438;
+    border-radius: 4px;
+    margin-left: 5px;
+    padding: 10px;
+    color: #c3e5f2;
+    margin-top: 30px;
+    z-index: 10;
+    cursor: pointer;
+}
+.bannerImage {
+    width: 20%;
+    padding-top: 70px;
+    position: relative;
+}
+.ContactContainer{
+    width: 100%;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: "Julius Sans One", sans-serif;
+}
+.Contacts{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.Contact{
+    width: 500px;
+    height: 100px;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-around;
+    color: rgb(134, 133, 133);
+    flex-direction: column;
+    text-align: left;
+}
+.Contact p:first-of-type{
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.Contact p:last-of-type{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif, 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    color: #ccc;
+    cursor: pointer;
+}
+.Contact p:last-of-type:hover{
+    text-decoration: underline;
+    color: #06A438;
+}
+.InfoContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+    font-family: "Julius Sans One", sans-serif;
+    font-size: 0.9rem;
+    font-weight: bolder;
+}
+.InfoContainer p:first-of-type{
+    color: #d8f849;
+}
+.InfoContainer p:last-of-type{
+    color: #06A438;
+}
+@keyframes flow {
+    0% {
+        background-position: 0 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0 50%;
+    }
+}
+@media screen and (max-width: 907px) {
+    .greeting {
+        font-size: 5rem;
+    }
+}
+
+@media screen and (max-width: 557px) {
+    .bannerTitle {
+        width: 100%;
+        padding-top: 100px;
+        padding-left: 20px;
+        padding-right: 10px;
+    }
+    .greeting {
+        right: 0px;
+        width: fit-content;
+        bottom: 20px;
+        font-size: 4rem;
+        margin-left: auto;
+    }
+    .ContactContainer{
+        padding: 20px;
+    }
+    .Contact{
+        width: 100%;
+        margin: 10px auto;
+        justify-content: space-evenly;
+    }
+    .Contact p:last-of-type{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 400px) {
+    .greeting {
+        right: 0px;
+        width: fit-content;
+        bottom: 20px;
+        font-size: 2rem;
+        margin-left: auto;
+    }
+    .bannerTitle p:nth-of-type(2) {
+        font-size: 4rem;
+    }
+    .bannerTitle p:nth-of-type(3) {
+        font-size: 1.5rem;
+    }
+}
