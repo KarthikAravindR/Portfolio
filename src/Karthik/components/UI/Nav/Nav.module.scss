@@ -12,6 +12,7 @@
     box-sizing: border-box;
     animation: open 1s;
     display: flex;
+    justify-content: space-around;
     flex-wrap: wrap;
     color: Black;
     font-family: "Julius Sans One", sans-serif;
@@ -119,11 +120,20 @@
     }
 }
 @media screen and (max-width: 577px) {
+    .SideDrawer {
+        display: block;
+    }
+    .Navigation{
+        width: 100%;
+        padding: 100px 0 0 0px;
+        height: max-content;
+        margin: 0 auto;
+    }
     .socialmedia{
         position: absolute;
         width: 100%;
-        height: 50px;
-        bottom: 30px;
+        height: 80px;
+        bottom: 80px;
         padding: 0;
         right: 0;
         display: flex;
@@ -143,7 +153,8 @@
     .Inspired{
         position: absolute;
         left: 0px;
-        bottom: 0px;
+        bottom: 70px;
+        width: 100%;
         font-family: cursive;
         text-align: center;
     }
