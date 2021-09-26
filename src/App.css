@@ -1,5 +1,9 @@
+body {
+  background-color: #06a438;
+}
 .App {
   text-align: center;
+  background-color: #06a438;
 }
 
 p {
